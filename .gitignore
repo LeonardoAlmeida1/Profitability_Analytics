@@ -1,0 +1,29 @@
+# Ambiente virtual
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Dados reais
+dados/*
+!dados/.gitkeep
+
+# Saídas geradas em demonstração
+dados_demo/Importados/
+dados_demo/consolidado.xlsx
+dados_demo/procedimentos_nao_mapeados.xlsx
+dados_demo/procedimentos_sem_custo.xlsx
+dados_demo/conflitos_mapeamento.xlsx
+
+# V2 - arquivos operacionais gerados
+dados_demo/agendas_tratadas.xlsx
+dados_demo/convenios_faltantes.xlsx
+dados_demo/log_importacao_agendas.xlsx
+dados_demo/analise_agendas.xlsx
+
+# Sistema / IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
