@@ -136,7 +136,7 @@ Available indicators include:
 
 ### Dashboard Overview
 
-![Profitability Analytics Dashboard](docs/images/dashboard_overview.png)
+![Profitability Analytics Dashboard](docs/images/dashboard_overview.PNG)
 
 The dashboard also includes:
 
@@ -151,9 +151,9 @@ The dashboard also includes:
 
 ### Profitability Analysis
 
-![Procedure Profitability Analysis](docs/images/profitability_analysis.png)
+![Procedure Profitability Analysis](docs/images/profitability_analysis.PNG)
 
-![Insurance Provider Ranking](docs/images/profitability_ranking.png)
+![Insurance Provider Ranking](docs/images/profitability_ranking.PNG)
 
 ---
 
