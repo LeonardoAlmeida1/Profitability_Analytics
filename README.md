@@ -134,6 +134,10 @@ Available indicators include:
 - Most profitable procedure;
 - Least profitable procedure.
 
+### Dashboard Overview
+
+![Profitability Analytics Dashboard](docs/images/dashboard_overview.png)
+
 The dashboard also includes:
 
 - Top 10 most profitable procedures;
@@ -144,6 +148,12 @@ The dashboard also includes:
 - Profitability matrix by procedure and insurance provider;
 - Detailed analytical table;
 - Interactive filters.
+
+### Profitability Analysis
+
+![Procedure Profitability Analysis](docs/images/profitability_analysis.png)
+
+![Insurance Provider Ranking](docs/images/profitability_ranking.png)
 
 ---
 
