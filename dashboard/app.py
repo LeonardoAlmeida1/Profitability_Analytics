@@ -75,6 +75,15 @@ df_filtrado = df_filtrado[
 # =====================================
 # KPIs
 # =====================================
+def formatar_moeda(valor):
+    return (
+        f"R$ {valor:,.2f}"
+        .replace(",", "X")
+        .replace(".", ",")
+        .replace("X", ".")
+    )
+def formatar_percentual(valor):
+    return f"{valor:.2f}%".replace(".", ",")
 
 receita_total = (
     df_filtrado["receita_media"]
@@ -138,22 +147,22 @@ col1, col2, col3, col4 = st.columns(4)
 
 col1.metric(
     "Receita Potencial",
-    f"R$ {receita_total:,.2f}"
+    formatar_moeda(receita_total)
 )
 
 col2.metric(
     "Custo Total",
-    f"R$ {custo_total:,.2f}"
+    formatar_moeda(custo_total)
 )
 
 col3.metric(
     "Lucro Potencial",
-    f"R$ {lucro_total:,.2f}"
+    formatar_moeda(lucro_total)
 )
 
 col4.metric(
     "Margem Média",
-    f"{margem_media:.2f}%"
+    formatar_percentual(margem_media)
 )
 
 col5, col6, col7 = st.columns(3)
@@ -266,7 +275,7 @@ fig_prejuizo.update_traces(
 
 st.plotly_chart(
     fig_prejuizo,
-    use_container_width=True
+    width="stretch"
 )
 
 # =====================================
@@ -291,7 +300,7 @@ fig_conv = px.bar(
 
 st.plotly_chart(
     fig_conv,
-    use_container_width=True
+    width="stretch"
 )
 
 # =====================================
@@ -339,7 +348,7 @@ fig_rank.update_yaxes(
 
 st.plotly_chart(
     fig_rank,
-    use_container_width=True
+    width="stretch"
 )
 
 # =====================================
@@ -374,7 +383,7 @@ fig_comp = px.scatter(
 
 st.plotly_chart(
     fig_comp,
-    use_container_width=True
+    width="stretch"
 )
 
 # =====================================
@@ -396,7 +405,7 @@ st.subheader(
 
 st.dataframe(
     heatmap.style.format("{:.2f}%"),
-    use_container_width=True
+    width="stretch"
 )
 
 # =====================================
@@ -428,5 +437,5 @@ st.dataframe(
             "margem_percentual": "{:.2f}%"
         }
     ),
-    use_container_width=True
+    width="stretch"
 )
